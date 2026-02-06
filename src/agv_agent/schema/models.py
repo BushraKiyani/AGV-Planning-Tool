@@ -100,3 +100,4 @@ class AGVSpecCandidate:
         preview = "; ".join([f"{k}: {v}" for k, v in list(kv.items())[:5]])
         ev = {"_kv": Evidence(snippet=preview, source_tool=tool, source_id=source_id)}
         return AGVSpecCandidate(source_id=source_id, tool=tool, fields=fields, confidence=conf, evidence=ev)
+
