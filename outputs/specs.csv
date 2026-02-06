@@ -1,4 +1,3 @@
 source_id,tool_trace,device_name,vendor,length_mm,width_mm,height_mm,payload_kg,speed_m_s,weight_kg,turning_radius_mm,lift_height_mm,confidence_length_mm,confidence_width_mm,confidence_height_mm,confidence_payload_kg,confidence_speed_m_s,evidence_vendor,source_vendor,evidence_device_name,source_device_name,confidence_vendor,confidence_device_name,confidence_turning_radius_mm,confidence_lift_height_mm
-P000036665.pdf,"key_value,regex_generic,llm",,,,,,,,,,,,,,,,,,,,,,,
-WEWO-TM_DE_Brochure_FTS-Move.pdf,key_value,,,1.4,600.0,210.0,800.0,1.6,,,,0.0,0.0,0.0,0.0,0.0,,,,,,,,
 www-agilox-net-pro....pdf,"regex_agilox,regex_agilox",AGILOX ONE,AGILOX,1.511,810.0,1.862,1.0,,,2.1,620.0,0.0,0.0,0.0,0.0,,,regex_agilox,,regex_agilox,0.65,0.65,0.0,0.0
+
