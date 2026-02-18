@@ -2,6 +2,11 @@
 
 AGV Planning Tool is a Python CLI that extracts and normalizes Automated Guided Vehicle (AGV) specifications from unstructured documents and vendor web pages. It combines deterministic parsing, vendor-aware regex extraction, optional LLM fallback, and confidence-based merging to generate structured, audit-ready CSV outputs for downstream planning workflows.
 
+## Why this matters
+
+Industrial AGV specifications are typically distributed as heterogeneous PDFs or web catalogs. 
+This tool reduces manual extraction effort by converting unstructured specifications into a standardized, machine-readable format suitable for planning, comparison, and analytics pipelines.
+
 ## What the project does
 
 The tool ingests either:
@@ -226,11 +231,6 @@ agv-agent extract \
 - Orchestration: `src/agv_agent/agent/orchestrator.py`
 - Schema/normalization: `src/agv_agent/schema/`
 - Web scraping: `src/agv_agent/ingest/web_scraper.py`
-
-## Why this matters
-
-Industrial AGV specifications are typically distributed as heterogeneous PDFs or web catalogs. 
-This tool reduces manual extraction effort by converting unstructured specifications into a standardized, machine-readable format suitable for planning, comparison, and analytics pipelines.
 
 ## License
 
