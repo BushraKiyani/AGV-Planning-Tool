@@ -74,6 +74,7 @@ src/agv_agent/
   utils/
     io.py             # input iteration + CSV writing
     logging.py        # logging setup
+    config.py         # JSON config loader
 
   cli.py              # command-line interface entry point
 ```
@@ -224,6 +225,18 @@ agv-agent extract \
 - Synonym mapping and validation are intentionally lightweight and are meant to be extended as your dataset grows.
 - Regex extractors are deterministic but source-format-sensitive; vendor-specific tuning improves recall.
 - LLM support is optional and gracefully no-ops when required environment variables are missing.
+- Fields such as `weight_kg`, `speed_m_s`, and `lift_height_mm` are not always present in every vendor brochure format. When a regex pattern finds no match, the field is left as `NaN` in the output — this reflects genuinely missing data, not an extraction error.
+
+## Testing
+
+Install the test dependencies and run pytest from the project root:
+
+```bash
+pip install -e ".[test]"
+python -m pytest
+```
+
+The test suite covers `_parse_agilox_number` and `_parse_dimensions_mm` in `schema/normalize.py`, including the German thousands-separator format used in AGILOX brochures (where `"1.511"` means 1511 mm, not 1.511 mm).
 
 ## Development quick reference
 
@@ -234,4 +247,4 @@ agv-agent extract \
 
 ## License
 
-No license.
+MIT — see [LICENSE](LICENSE).

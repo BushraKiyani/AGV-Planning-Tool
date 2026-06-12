@@ -20,5 +20,11 @@ package-dir = {"" = "src"}
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[project.optional-dependencies]
+test = ["pytest"]
+
 [project.scripts]
 agv-agent = "agv_agent.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
