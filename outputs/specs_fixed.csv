@@ -1,0 +1,2 @@
+source_id,tool_trace,device_name,vendor,length_mm,width_mm,height_mm,payload_kg,speed_m_s,weight_kg,turning_radius_mm,lift_height_mm,evidence_vendor,source_vendor,evidence_device_name,source_device_name,confidence_vendor,confidence_device_name,confidence_length_mm,confidence_width_mm,confidence_height_mm,confidence_payload_kg,confidence_turning_radius_mm
+agilox_one_sample.txt,regex_agilox,AGILOX ONE,AGILOX,1511.0,810.0,1862.0,1000.0,,,2100.0,,,regex_agilox,,regex_agilox,0.65,0.65,0.0,0.0,0.0,0.0,0.0
